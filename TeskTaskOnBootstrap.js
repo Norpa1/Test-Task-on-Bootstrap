@@ -5,13 +5,21 @@ let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
+    document.getElementsByClassName("btn-wrapper open")[0].style.zIndex = "100";
     MyNav.setAttribute("class","nav navbar-nav MyNavigation")
-   // document.getElementsByClassName("CityInfo")[0].style.display = "none";
+    document.getElementsByClassName("my-nav-wrapper")[0].className = "d-flex d-md-none my-nav-wrapper-active bg-white container col-10 position-absolute"; 
+    document.getElementsByClassName("CityInfo")[0].style.display = "none";
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
     MyNav.setAttribute("class","nav navbar-nav ml-5 MyNavigation")
-   // document.getElementsByClassName("CityInfo")[0].style.display = "block";
+    document.getElementsByClassName("my-nav-wrapper-active")[0].className = "my-nav-wrapper d-flex d-md-none bg-white container col-10 position-absolute"; 
+    setTimeout(() => {
+      if (document.getElementsByClassName("my-nav-wrapper").length > 0) {
+        document.getElementsByClassName("my-nav-wrapper")[0].className = "my-nav-wrapper bg-white container col-10 position-absolute d-none"; 
+      }
+    },900)
+    document.getElementsByClassName("CityInfo")[0].style.display = "flex";
     menuOpen = false;
   }
 })

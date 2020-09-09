@@ -13,46 +13,62 @@
 </head>
 <body >
 
- 
- 
+	<header id="slide-out1" style="flex-direction:column;" class="d-none bg-white container col-10 position-absolute my-nav-wrapper"> 
 	
- 
+		<div style="margin-top:100px; margin-bottom:70px;">
+			<a class="ml-3 text-dark nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em; line-height:2">Услуги</h5></a>
+			<a class="ml-3 text-dark nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em; line-height:2">Портфолио</h5></a>
+			<a class="ml-3 text-dark nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em; line-height:2">Отзывы</h5></a>
+			<a class="ml-3 text-dark nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em; line-height:2">Вакансии</h5></a>
+			<a class="ml-3 text-dark nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em; line-height:2">Контакты</h5></a>	
+		</div>
+		<div style="height:100vh; background-color: #211F2A">
+			<a class="ml-3 mt-4 text-white nav-link d-flex flex-column justify-content-end" href="#">
+				<h6   style="font-size:1.1em; ">Ростов-на-Дону,</h6>
+				<h6   style="font-size:1.1em; ">Ленина, 21</h6>
+				<span style="font-size:1.4em; line-height:2.1" class="font-weight-bold">8(863)243-15-10</span>
+			</a>
+		</div>
+	 
+	</header>
+			
+	<button type="button" data-toggle="collapse" data-target="#slide-out" class="d-flex d-md-none navbar-toggler custom-toggler">
+		<div class="btn-wrapper">
+			<div class="menu-btn-burger"></div>
+		</div>
+	</button>
 
 	<nav style="position:relative; z-index:15;" class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
 		
 		<div class="container col-10"> 
  
-			<button type="button" data-toggle="collapse" data-target="#slide-out" class="navbar-toggler custom-toggler">
-				<div class="btn-wrapper">
-					<div class="menu-btn-burger"></div>
-				  </div>
-			</button>
+			<div class="col-0.1"></div>
 
 			<a href="#" class="navbar-brand col-md-order-1">
 				<img width="48" height="48" src="rededge_logo.png" alt="">	
 			</a>
 
-			<div id="slide-out" class="collapse navbar-collapse col-md-order-2" >
+			<div class="collapse navbar-collapse col-md-order-2" >
 				<ul class="nav navbar-nav ml-5 MyNavigation">
 
 					<li class="nav-item mx-2">
-						<a class="nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em">Услуги</h5></a>
+						<a class="nav-link font-weight-bold" href="#"><h5 class="text-dark" style="font-size:1.35em">Услуги</h5></a>
 					</li>
 			 		
 			 		<li class="nav-item mx-2">
-						<a class="nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em">Портфолио</h5></a>
+						<a class="nav-link font-weight-bold" href="#"><h5 class="text-dark" style="font-size:1.35em">Портфолио</h5></a>
 					</li>
 
 			 		<li class="nav-item mx-2">
-						<a class="nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em">Отзывы</h5></a>
+						<a class="nav-link font-weight-bold" href="#"><h5 class="text-dark" style="font-size:1.35em">Отзывы</h5></a>
 					</li>
 
 				 	<li class="nav-item mx-2">
-						<a class="nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em">Вакансии</h5></a>
+						<a class="nav-link font-weight-bold" href="#"><h5 class="text-dark" style="font-size:1.35em">Вакансии</h5></a>
 					</li>	
 
 					<li class="nav-item mx-2">
-						<a class="nav-link font-weight-bold" href="#"><h5 style="font-size:1.35em">Контакты</h5></a>
+						<a class="nav-link font-weight-bold" href="#"><h5 class="text-dark" style="font-size:1.35em">Контакты</h5></a>
 					</li>	
 
 				</ul>
@@ -61,8 +77,8 @@
 			<div class="navbar-brand col-md-order-3">
 				<ul class="nav navbar-nav CityInfo">
 					<li class="">
-						<a class="nav-link d-flex flex-column justify-content-end" href="#">
-							<span class="font-weight-bold">8(863)243-15-10</span>
+						<a class="text-dark nav-link d-flex flex-column justify-content-end" href="#">
+							<span class="text-dark font-weight-bold">8(863)243-15-10</span>
 							<h6>Ростов-на-Дону</h6>
 						</a>	
 					</li>	

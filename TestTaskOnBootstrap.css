@@ -5,16 +5,16 @@
 
 .custom-toggler {
    border:0px !important;
- 
+   position: absolute;
+   z-index: 125;
+   top:8px;
+   left:10px;
 }
+
 .navbar-toggler:focus, .navbar-toggler:active {
    outline: none;
    box-shadow: none;
-}
-
-.custom-toggler-icon {
-   font-size:35px;
-}
+} 
 
 .custom-toggler:focused {
    border:0px;
@@ -63,8 +63,42 @@
    width: 100% !important;
 }
 
+
+.my-nav-wrapper {
+   padding:0px !important;
+   position: absolute;  
+   display: flex;
+   align-items: stretch;
+   z-index:50; 
+   box-shadow: 3px 0px 10px 0px rgba(210,210,210,0.85);
+   animation-name: SlideToLeft;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+}
  
- 
+.my-nav-wrapper-active {
+   padding:0px !important;
+   position: absolute;
+   display: flex;
+   align-items: stretch;
+   z-index:50; 
+   box-shadow: 3px 0px 10px 0px rgba(210,210,210,0.85);
+   animation-name: SlideToRight;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+}
+
+@keyframes SlideToRight {
+   from {margin-left: -250px}
+   to {margin-left: 0px}
+}
+
+@keyframes SlideToLeft {
+   from {margin-left: 10px; display: flex;}
+   to {margin-left: -2250px; display: none;}
+}
+
+
 .btn-wrapper {
    position: relative;                                         
    display: flex;                                         
@@ -107,9 +141,11 @@
 }
 
 .btn-wrapper.open .menu-btn-burger {
+ 
    transform: translateX(-50px);
    background: transparent;
    box-shadow: none;
+ 
 }
 
 .btn-wrapper.open .menu-btn-burger::before {
