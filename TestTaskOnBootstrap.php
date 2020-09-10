@@ -31,7 +31,7 @@
 		</div>
 	 
 	</header>
-			
+	<div style="min-height:100vh;">	
 	<button type="button" data-toggle="collapse" data-target="#slide-out" class="d-flex d-md-none navbar-toggler custom-toggler">
 		<div class="btn-wrapper">
 			<div class="menu-btn-burger"></div>
@@ -88,7 +88,7 @@
  
 	</nav>
 
-	<div style="min-height:100vh; background: linear-gradient(0deg, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0.5)), url('Rectangle2.png') no-repeat; background-size:cover; width:2000px; height: 600px; z-index:3; left:0px;" class="d-none d-md-block container-fluid position-relative"> 	 
+	<div style="background: linear-gradient(0deg, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0.5)), url('Rectangle2.png') no-repeat; background-size:cover; width:2000px; height: 600px; z-index:3; left:0px;" class="d-none d-md-block container-fluid position-relative"> 	 
 		<div class="container col-10 w-100 h-100">
 				<div class="col-5 w-100 h-100">
 					<div class="h-100 w-100 row d-flex align-items-center">
@@ -141,7 +141,7 @@
 					</ol>
 				</div>
 			</div>
-
+	</div>
 		<div class="MyFooter footer mt-auto w-100 h-100 container-fluid d-none d-md-block">
 			<div class="container col-10">
 				<div class="row">
