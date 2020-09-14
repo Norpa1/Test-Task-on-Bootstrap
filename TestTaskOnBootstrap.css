@@ -4,6 +4,7 @@
 }
 
 .custom-toggler {
+   outline-style:none;
    border:0px !important;
    position: absolute;
    z-index: 125;
@@ -11,14 +12,19 @@
    left:10px;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
-   outline: none;
+.navbar-toggler {
+   border:0px !important;
+   outline: 0px !important;  
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active  {
    box-shadow: none;
+   border:0px !important;
+   outline: none !important;
+   box-shadow: none !important;
 } 
 
-.custom-toggler:focused {
-   border:0px;
-}
 
 .close-button,
 .custom-toggler-icon {
@@ -63,11 +69,11 @@
    width: 100% !important;
 }
 
-
 .my-nav-wrapper {
    padding:0px !important;
    position: absolute;  
    display: flex;
+   flex-direction:column !important;
    align-items: stretch;
    z-index:50; 
    box-shadow: 3px 0px 10px 0px rgba(210,210,210,0.85);
@@ -80,11 +86,12 @@
    padding:0px !important;
    position: absolute;
    display: flex;
+   flex-direction:column !important;
    align-items: stretch;
    z-index:50; 
    box-shadow: 3px 0px 10px 0px rgba(210,210,210,0.85);
    animation-name: SlideToRight;
-   animation-duration: 1s;
+   animation-duration: 1.1s;
    animation-iteration-count: 1;
 }
 
@@ -98,6 +105,112 @@
    to {margin-left: -2250px; display: none;}
 }
 
+.My-nav-list {
+   margin:140px 0px 70px 0px;
+}
+
+.My-nav-footer {
+  height:100vh; 
+  background-color: #211F2A;
+}
+ 
+.My-main-wrapper {
+   min-height:100vh;
+}
+
+.Main-logo {
+   width: 64px;
+   height: 64px;
+   margin-left:0px;
+}
+ 
+.My-connect-form {
+   background: linear-gradient(0deg, rgba(53, 53, 53, 0.5), rgba(53, 53, 53, 0.5)), url('Rectangle2.png') no-repeat; 
+   background-size:cover; 
+   width:2000px; 
+   height:600px; 
+   z-index:3; 
+   left:0px;
+   margin-bottom:100px;
+}
+
+.My-frame-custom-start {
+   box-shadow: -15px -15px 0px 0px rgba(213,21,34,1);
+}
+
+.My-frame-custom-end {
+   position: relative;
+   left:0px;
+   box-shadow: 15px 15px 0px 0px rgba(111,97,160,1);
+}
+
+.My-logo-footer {
+   width:96px;
+   height:96px;
+}
+
+.My-header-custom {
+   position:relative; 
+   z-index:15;
+}
+
+.dboutput1,
+.dboutput2 {
+   display: none;
+}
+
+.My-btn-more-custom {
+   border-radius:0px !important; 
+   display: flex !important;
+   width:200px !important;
+   justify-content: center !important;
+}
+
+.My-button-custom {
+   background-color:#D51522 !important; 
+   width: 256px;
+   border-radius:1px !important;
+   height: 60px !important;
+}
+
+.My-input-custom {
+   padding:5px !important;
+   padding-left:10px !important;
+   border-radius:1px !important; 
+   text-align: left;
+   height: 60px !important;
+   width: 260px !important;
+   box-shadow: inset 0px 0px 10px 5px rgba(210,210,210,0.85);
+
+   border:0px !important;
+   outline: none !important;
+ 
+}
+
+.My-input-custom:active,
+.My-input-custom:focused {
+   border:0px !important;
+   outline: none !important;
+   box-shadow: none !important;
+}
+ 
+
+
+.My-info-custom {
+   padding:0px !important;
+   line-height: 25px;
+   font-size:22px;
+}
+
+.My-main-info-custom {
+   font-size:50px; 
+}
+
+.My-news-wrapper {
+   height: 260px !important;
+   padding:35px !important;
+   border:2px solid #D8D8D8;
+}
 
 .btn-wrapper {
    position: relative;                                         
@@ -108,15 +221,16 @@
    height: 80px;                                         
    cursor: pointer;                                        
    transition: all .5s ease-in-out;
-}
 
+}
+ 
 .menu-btn-burger {
    width: 60px;
    height: 8px;
    background: #D51522;
 
    box-shadow: 0 2px 5px rgba(255,101,47,.2);
-   transition: all .5s ease-in-out;
+   transition: all .5s ease-in-out; 
 }
 
 .menu-btn-burger::before,
@@ -141,11 +255,9 @@
 }
 
 .btn-wrapper.open .menu-btn-burger {
- 
    transform: translateX(-50px);
    background: transparent;
    box-shadow: none;
- 
 }
 
 .btn-wrapper.open .menu-btn-burger::before {
@@ -154,6 +266,7 @@
 }
 
 .btn-wrapper.open .menu-btn-burger::after {
+   outline-style: none !important;
    height: 4px;
    transform: rotate(-45deg) translate(35px, 35px);
 }
